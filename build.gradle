@@ -1,0 +1,63 @@
+plugins {
+	id 'java'
+	id 'org.springframework.boot' version '4.1.1'
+	id 'io.spring.dependency-management' version '1.1.7'
+}
+
+group = 'mil.army.t2com.moda'
+version = '0.0.1-SNAPSHOT'
+description = 'Todo Demo project for Spring Boot'
+
+java {
+	toolchain {
+		languageVersion = JavaLanguageVersion.of(21)
+	}
+}
+
+repositories {
+	mavenCentral()
+}
+
+// Fix Java Mockito Message
+configurations {
+	mockitoAgent
+}
+
+dependencies {
+	implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
+	implementation 'org.springframework.boot:spring-boot-starter-webmvc'
+	implementation 'org.springframework.boot:spring-boot-starter-flyway'
+	implementation 'org.flywaydb:flyway-core'
+	implementation 'org.flywaydb:flyway-database-postgresql'
+
+	runtimeOnly 'org.postgresql:postgresql'
+	runtimeOnly 'org.springframework.boot:spring-boot-docker-compose'
+
+	developmentOnly 'org.springframework.boot:spring-boot-devtools'
+	testImplementation 'org.springframework.boot:spring-boot-starter-data-jpa-test'
+	testImplementation 'org.springframework.boot:spring-boot-starter-webmvc-test'
+    runtimeOnly 'com.h2database:h2'
+    testRuntimeOnly 'org.junit.platform:junit-platform-launcher'
+// Fix Java Mockito Message
+	mockitoAgent('org.mockito:mockito-core') {transitive = false}
+
+//	implementation 'org.apache.commons:commons-text:1.13.0'
+	testRuntimeOnly 'com.h2database:h2'
+}
+
+tasks.named('test') {
+	useJUnitPlatform()
+}
+// Fix Java Mockito Message
+tasks.withType(Test).configureEach {
+	jvmArgs "-javaagent:${configurations.mockitoAgent.singleFile}"
+}
+
+tasks.register('showRepositories') {
+	repositories.each {
+		println "repository: ${it.name} ('${it.url}')"
+	}
+}
+
+// region configure Spring's bootRun dependency chain
+

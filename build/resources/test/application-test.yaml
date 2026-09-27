@@ -1,0 +1,19 @@
+spring:
+  application:
+    name: todo
+
+  datasource:
+    url: jdbc:h2:mem:todo;DB_CLOSE_DELAY=-1;NON_KEYWORDS=KEY
+    driver-class-name: org.h2.Driver
+    username: sa
+    password: password
+
+  jpa:
+    database-platform: org.hibernate.dialect.H2Dialect
+    hibernate:
+      ddl-auto: create-drop
+    show-sql: true
+
+  flyway:
+    enabled: false
+    locations: classpath:db/migration

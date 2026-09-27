@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="mil.t2com.moda.todo.task.TaskServiceTest" tests="6" skipped="0" failures="0" errors="0" timestamp="2026-09-27T03:07:17.935Z" hostname="Mac-2780.lan" time="0.032">
+  <properties/>
+  <testcase name="shouldSaveNewTask()" classname="mil.t2com.moda.todo.task.TaskServiceTest" time="0.028"/>
+  <testcase name="shouldDeleteExistingTask()" classname="mil.t2com.moda.todo.task.TaskServiceTest" time="0.001"/>
+  <testcase name="shouldSaveAllTasks()" classname="mil.t2com.moda.todo.task.TaskServiceTest" time="0.001"/>
+  <testcase name="shouldGetAllTasks()" classname="mil.t2com.moda.todo.task.TaskServiceTest" time="0.0"/>
+  <testcase name="shouldSaveNewTaskWithNewCategory()" classname="mil.t2com.moda.todo.task.TaskServiceTest" time="0.0"/>
+  <testcase name="shouldFindTaskById()" classname="mil.t2com.moda.todo.task.TaskServiceTest" time="0.001"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="x-ua-compatible" content="IE=edge"/>
+<title>Test results - TaskControllerTest</title>
+<link href="../css/base-style.css" rel="stylesheet" type="text/css"/>
+<link href="../css/style.css" rel="stylesheet" type="text/css"/>
+<script src="../js/report.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="content">
+<h1>TaskControllerTest</h1>
+<div class="breadcrumbs">
+<a href="../index.html">all</a> &gt; 
+<a href="../packages/mil.t2com.moda.todo.task.html">mil.t2com.moda.todo.task</a> &gt; TaskControllerTest</div>
+<div id="summary">
+<table>
+<tr>
+<td>
+<div class="summaryGroup">
+<table>
+<tr>
+<td>
+<div class="infoBox" id="tests">
+<div class="counter">6</div>
+<p>tests</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="failures">
+<div class="counter">0</div>
+<p>failures</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="ignored">
+<div class="counter">0</div>
+<p>ignored</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="duration">
+<div class="counter">0.030s</div>
+<p>duration</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="infoBox success" id="successRate">
+<div class="percent">100%</div>
+<p>successful</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div class="tab-container">
+<ul class="tabLinks">
+<li>
+<a href="#">Tests</a>
+</li>
+<li>
+<a href="#">Standard output</a>
+</li>
+</ul>
+<div class="tab">
+<h2>Tests</h2>
+<table>
+<thead>
+<tr>
+<th>Test</th>
+<th>Duration</th>
+<th>Result</th>
+</tr>
+</thead>
+<tr>
+<td class="success">shouldDeleteTaskById()</td>
+<td class="success">0.004s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">shouldFindAllTasks()</td>
+<td class="success">0.006s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">shouldFindTaskById()</td>
+<td class="success">0.007s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">shouldSaveAllTasks()</td>
+<td class="success">0.002s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">shouldSaveNewTask()</td>
+<td class="success">0.004s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">shouldSaveNewTaskUsingCaptor()</td>
+<td class="success">0.007s</td>
+<td class="success">passed</td>
+</tr>
+</table>
+</div>
+<div class="tab">
+<h2>Standard output</h2>
+<span class="code">
+<pre id="class-stdout">2026-09-26T22:07:17.834-05:00  INFO 4477 --- [todo] [    Test worker] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [mil.t2com.moda.todo.task.TaskControllerTest]: TaskControllerTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2026-09-26T22:07:17.836-05:00  INFO 4477 --- [todo] [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration mil.t2com.moda.todo.TodoApplication for test class mil.t2com.moda.todo.task.TaskControllerTest
+2026-09-26T22:07:17.836-05:00  INFO 4477 --- [todo] [    Test worker] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [mil.t2com.moda.todo.task.TaskControllerTest]: TaskControllerTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2026-09-26T22:07:17.837-05:00  INFO 4477 --- [todo] [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration mil.t2com.moda.todo.TodoApplication for test class mil.t2com.moda.todo.task.TaskControllerTest
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+ :: Spring Boot ::                (v4.1.1)
+
+2026-09-26T22:07:17.847-05:00  INFO 4477 --- [todoapp] [    Test worker] m.t.moda.todo.task.TaskControllerTest    : Starting TaskControllerTest using Java 21.0.10 with PID 4477 (started by curtarbtin in /Users/curtarbtin/Development/github/cohort12-TodoApp)
+2026-09-26T22:07:17.847-05:00  INFO 4477 --- [todoapp] [    Test worker] m.t.moda.todo.task.TaskControllerTest    : No active profile set, falling back to 1 default profile: &quot;default&quot;
+2026-09-26T22:07:17.899-05:00  INFO 4477 --- [todoapp] [    Test worker] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2026-09-26T22:07:17.899-05:00  INFO 4477 --- [todoapp] [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2026-09-26T22:07:17.900-05:00  INFO 4477 --- [todoapp] [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 1 ms
+2026-09-26T22:07:17.901-05:00  INFO 4477 --- [todoapp] [    Test worker] m.t.moda.todo.task.TaskControllerTest    : Started TaskControllerTest in 0.062 seconds (process running for 3.644)
+
+MockHttpServletRequest:
+      HTTP Method = POST
+      Request URI = /api/v1/task
+       Parameters = {}
+          Headers = [Content-Type:&quot;application/json;charset=UTF-8&quot;, Content-Length:&quot;167&quot;]
+             Body = {&quot;title&quot;:&quot;Learn about testing HTTP request/response&quot;,&quot;description&quot;:&quot;Learn how to use WebMvcTest&quot;,&quot;isComplete&quot;:false,&quot;category&quot;:{&quot;label&quot;:&quot;enablement&quot;,&quot;id&quot;:null},&quot;id&quot;:1}
+    Session Attrs = {}
+
+Handler:
+             Type = mil.t2com.moda.todo.task.TaskController
+           Method = mil.t2com.moda.todo.task.TaskController#createNewTask(Task)
+
+Async:
+    Async started = false
+     Async result = null
+
+Resolved Exception:
+             Type = null
+
+ModelAndView:
+        View name = null
+             View = null
+            Model = null
+
+FlashMap:
+       Attributes = null
+
+MockHttpServletResponse:
+           Status = 201
+    Error message = null
+          Headers = [Content-Type:&quot;application/json&quot;]
+     Content type = application/json
+             Body = {&quot;title&quot;:&quot;Learn about testing HTTP request/response&quot;,&quot;description&quot;:&quot;Learn how to use WebMvcTest&quot;,&quot;isComplete&quot;:false,&quot;category&quot;:{&quot;label&quot;:&quot;enablement&quot;,&quot;id&quot;:null},&quot;id&quot;:1}
+    Forwarded URL = null
+   Redirected URL = null
+          Cookies = []
+
+MockHttpServletRequest:
+      HTTP Method = POST
+      Request URI = /api/v1/task
+       Parameters = {}
+          Headers = [Content-Type:&quot;application/json;charset=UTF-8&quot;, Content-Length:&quot;167&quot;]
+             Body = {&quot;title&quot;:&quot;Learn about testing HTTP request/response&quot;,&quot;description&quot;:&quot;Learn how to use WebMvcTest&quot;,&quot;isComplete&quot;:false,&quot;category&quot;:{&quot;label&quot;:&quot;enablement&quot;,&quot;id&quot;:null},&quot;id&quot;:1}
+    Session Attrs = {}
+
+Handler:
+             Type = mil.t2com.moda.todo.task.TaskController
+           Method = mil.t2com.moda.todo.task.TaskController#createNewTask(Task)
+
+Async:
+    Async started = false
+     Async result = null
+
+Resolved Exception:
+             Type = null
+
+ModelAndView:
+        View name = null
+             View = null
+            Model = null
+
+FlashMap:
+       Attributes = null
+
+MockHttpServletResponse:
+           Status = 201
+    Error message = null
+          Headers = [Content-Type:&quot;application/json&quot;]
+     Content type = application/json
+             Body = {&quot;title&quot;:&quot;Learn about testing HTTP request/response&quot;,&quot;description&quot;:&quot;Learn how to use WebMvcTest&quot;,&quot;isComplete&quot;:false,&quot;category&quot;:{&quot;label&quot;:&quot;enablement&quot;,&quot;id&quot;:null},&quot;id&quot;:1}
+    Forwarded URL = null
+   Redirected URL = null
+          Cookies = []
+
+MockHttpServletRequest:
+      HTTP Method = DELETE
+      Request URI = /api/v1/task/3
+       Parameters = {}
+          Headers = [Content-Type:&quot;application/json;charset=UTF-8&quot;, Content-Length:&quot;1&quot;]
+             Body = 1
+    Session Attrs = {}
+
+Handler:
+             Type = mil.t2com.moda.todo.task.TaskController
+           Method = mil.t2com.moda.todo.task.TaskController#removeTaskById(Long)
+
+Async:
+    Async started = false
+     Async result = null
+
+Resolved Exception:
+             Type = null
+
+ModelAndView:
+        View name = null
+             View = null
+            Model = null
+
+FlashMap:
+       Attributes = null
+
+MockHttpServletResponse:
+           Status = 204
+    Error message = null
+          Headers = []
+     Content type = null
+             Body = 
+    Forwarded URL = null
+   Redirected URL = null
+          Cookies = []
+</pre>
+<button class="clipboard-copy-btn" aria-label="Copy to clipboard" data-copy-element-id="class-stdout">Copy</button>
+</span>
+</div>
+</div>
+<div id="footer">
+<p>
+<div>
+<label class="hidden" id="label-for-line-wrapping-toggle" for="line-wrapping-toggle">Wrap lines
+<input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
+</label>
+</div>Generated by 
+<a href="https://www.gradle.org">Gradle 9.2.1</a> at Sep 26, 2026, 10:07:18 PM</p>
+</div>
+</div>
+</body>
+</html>

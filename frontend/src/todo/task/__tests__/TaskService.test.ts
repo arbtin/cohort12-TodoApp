@@ -15,8 +15,8 @@ describe('Task Service', () => {
 
     it('should get all tasks', async () => {
         const expected: Task[] = [
-            {id: 1, title: 'First Task', description: 'get task component built.'},
-            {id: 2, title: 'Second Task', description: 'use new task component.'},
+            {id: 1, title: 'First Task', description: 'get task component built.', isComplete: false},
+            {id: 2, title: 'Second Task', description: 'use new task component.', isComplete: true},
         ];
 
         server.use(

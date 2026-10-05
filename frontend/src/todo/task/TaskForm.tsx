@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import {useForm} from "react-hook-form";
 import * as Yup from "yup";
 import {number, string} from "yup";
@@ -14,6 +15,10 @@ const validationSchema = Yup.object({
         description: string().required('Description is required.'),
     }
 );
+=======
+import React from 'react';
+import type {Task} from "./TaskType.ts";
+>>>>>>> d57e3f1 (From Friday Oct 2nd - built task item and page with tests)
 
 type TaskFormProps = {
     isOpen: boolean;
@@ -22,6 +27,7 @@ type TaskFormProps = {
 }
 
 export const TaskForm = ({isOpen, onClose, onSuccess}: TaskFormProps) => {
+<<<<<<< HEAD
     const {
         register,
         handleSubmit,
@@ -127,3 +133,11 @@ export const TaskForm = ({isOpen, onClose, onSuccess}: TaskFormProps) => {
         </div>
     );
 }
+=======
+    return (
+        <form >
+
+        </form>
+    );
+};
+>>>>>>> d57e3f1 (From Friday Oct 2nd - built task item and page with tests)

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import {render, screen, waitFor} from "@testing-library/react";
 import {TaskForm} from "../TaskForm.tsx";
 import {expect} from "vitest";
@@ -109,3 +110,17 @@ describe('Task Form', () => {
         });
     });
 });
+=======
+import {render, screen} from "@testing-library/react";
+import {TaskForm} from "../TaskForm.tsx";
+
+vi.mock("../TaskApi");
+
+describe('TaskForm', () => {
+    it('renders correctly', () => {
+        render(<TaskForm/>);
+
+
+    })
+})
+>>>>>>> d57e3f1 (From Friday Oct 2nd - built task item and page with tests)
